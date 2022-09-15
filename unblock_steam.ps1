@@ -1,6 +1,10 @@
-# UnBlock Steam
-$steam_path="C:\Program Files (x86)\Steam\steam.exe"
-$rule_name="_01 Block steam(Program)"
+# block steam's connection
+
+# get the location of the script file 
+$mypath = $MyInvocation.MyCommand.Path
+$mypath=Split-Path $mypath -Parent
+# and source the setting file which should be in the same location
+. $mypath\settings.ps1
 
 If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))
 {
