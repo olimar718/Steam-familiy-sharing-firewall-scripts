@@ -1,11 +1,14 @@
-# what is this
+# What is this
 
 A set of scripts to block steam from accessing INTERNET in order to facilitate the nefarious use of steam family sharing, see [https://store.steampowered.com/promotion/familysharing](https://store.steampowered.com/promotion/familysharing)
 
 # Setup
 
+Download the scripts by either git clone or by downloading and extracting the zip. Put all the scripts in the same arbitrary location on your filesystem
+
 ## Set execution policy to unrestricted so that you can execute powershell scripts
 - Open PowerShell as admin (right clic, execute as admin), and run the following commands:
+
 `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted`
 
 `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted`
@@ -74,7 +77,7 @@ Now you can execute the bat files by double clicking on them
 
 - run the `block_wrapper.bat` to block steam from accessing INTERNET
 
-- run the `unblock_wrapper.bat` to allow steam to accessINTERNET
+- run the `unblock_wrapper.bat` to allow access to INTERNET for steam
 
 ## Running the powershell script directly
 
